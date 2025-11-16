@@ -61,9 +61,10 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
                 if(isset($_SESSION['redirect_after_login'])) {
                     $redirect_url = $_SESSION['redirect_after_login'];
                     unset($_SESSION['redirect_after_login']);
-                    redirect('user/' . $redirect_url);
+                    redirect($redirect_url);
                 } else {
-                    redirect('user/tracking.php');
+                    // User redirect to home page
+                    redirect('index.php');
                 }
             }
         } else {

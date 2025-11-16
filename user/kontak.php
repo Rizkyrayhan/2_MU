@@ -44,10 +44,8 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
         <div class="container mx-auto px-4 py-4">
             <div class="flex justify-between items-center">
                 <a href="../index.php" class="flex items-center space-x-2">
-                    <div class="bg-indigo-600 rounded-full p-2">
-                        <i class="fas fa-tshirt text-white text-xl"></i>
-                    </div>
-                    <span class="text-2xl font-bold text-gray-800">6R Laundry</span>
+                        <img src="../assets/images/logo2_6R.png" alt="6R Laundry" class="w-15 h-10">
+                    <span class="text-2xl font-bold text-gray-800">Laundry</span>
                 </a>
                 
                 <div class="hidden md:flex space-x-8">
@@ -126,8 +124,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
                             </label>
                             <input type="text" name="nama" required
                                    value="<?php echo isset($_POST['nama']) ? htmlspecialchars($_POST['nama']) : ''; ?>"
-                                   class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-transparent form-input"
-                                   placeholder="John Doe">
+                                   class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-transparent form-input">
                         </div>
                         
                         <div>
@@ -136,8 +133,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
                             </label>
                             <input type="email" name="email" required
                                    value="<?php echo isset($_POST['email']) ? htmlspecialchars($_POST['email']) : ''; ?>"
-                                   class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-transparent form-input"
-                                   placeholder="email@example.com">
+                                   class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-transparent form-input">
                         </div>
                         
                         <div>
@@ -146,8 +142,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
                             </label>
                             <input type="tel" name="telepon"
                                    value="<?php echo isset($_POST['telepon']) ? htmlspecialchars($_POST['telepon']) : ''; ?>"
-                                   class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-transparent form-input"
-                                   placeholder="+62 812 3456 7890">
+                                   class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-transparent form-input">
                         </div>
                         
                         <div>
@@ -178,7 +173,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
                                 </div>
                                 <div>
                                     <h3 class="font-semibold text-gray-800 mb-1">Alamat</h3>
-                                    <p class="text-gray-600">Jl. Sudirman No. 123<br>Lampung, Indonesia</p>
+                                    <p class="text-gray-600">Jl. Ki Maja Blok BB No.17, Way Halim Permai, <br>Kec. Way Halim, Kota Bandar Lampung, Lampung 35132</p>
                                 </div>
                             </div>
                             
@@ -188,7 +183,6 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
                                 </div>
                                 <div>
                                     <h3 class="font-semibold text-gray-800 mb-1">Telepon</h3>
-                                    <p class="text-gray-600">+62 21 1234 5678</p>
                                     <p class="text-gray-600">+62 812 3456 7890 (WhatsApp)</p>
                                 </div>
                             </div>
@@ -200,7 +194,6 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
                                 <div>
                                     <h3 class="font-semibold text-gray-800 mb-1">Email</h3>
                                     <p class="text-gray-600">info@6rlaundry.com</p>
-                                    <p class="text-gray-600">support@6rlaundry.com</p>
                                 </div>
                             </div>
                             
@@ -246,7 +239,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
             <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">Lokasi Kami</h2>
             <div class="rounded-lg overflow-hidden shadow-lg" style="height: 400px;">
                 <iframe 
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.666666666667!2d106.8166666!3d-6.2!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNsKwMTInMDAuMCJTIDEwNsKwNDgnNTguMCJF!5e0!3m2!1sen!2sid!4v1234567890"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3972.2542313682!2d105.26975757600074!3d-5.378155253791169!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e40dbb490c37013%3A0x7910e01105d4eade!2s6R%20LAUNDRY%202!5e0!3m2!1sid!2sid!4v1763257657162!5m2!1sid!2sid"
                     width="100%" 
                     height="100%" 
                     style="border:0;" 
@@ -275,7 +268,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
                 
                 <div class="bg-white rounded-lg shadow-md p-6">
                     <h3 class="font-bold text-gray-800 mb-2">Bagaimana cara pembayaran?</h3>
-                    <p class="text-gray-600">Kami menerima pembayaran tunai, transfer bank, e-wallet (GoPay, OVO, DANA), dan kartu kredit/debit.</p>
+                    <p class="text-gray-600">Kami hanya menerima pembayaran tunai saat kurir mengambil pesanan.</p>
                 </div>
                 
                 <div class="bg-white rounded-lg shadow-md p-6">

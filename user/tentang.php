@@ -17,10 +17,8 @@ require_once '../config/database.php';
         <div class="container mx-auto px-4 py-4">
             <div class="flex justify-between items-center">
                 <a href="../index.php" class="flex items-center space-x-2">
-                    <div class="bg-indigo-600 rounded-full p-2">
-                        <i class="fas fa-tshirt text-white text-xl"></i>
-                    </div>
-                    <span class="text-2xl font-bold text-gray-800">6R Laundry</span>
+                        <img src="../assets/images/logo2_6R.png" alt="6R Laundry" class="w-15 h-10">
+                    <span class="text-2xl font-bold text-gray-800">Laundry</span>
                 </a>
                 
                 <div class="hidden md:flex space-x-8">
@@ -80,14 +78,12 @@ require_once '../config/database.php';
                 <div class="md:w-1/2 fade-in-delayed">
                     <h2 class="text-3xl font-bold text-gray-800 mb-4">Cerita Kami</h2>
                     <p class="text-gray-600 mb-4">
-                        6R Laundry didirikan pada tahun 2019 dengan visi untuk menghadirkan layanan laundry berkualitas tinggi yang dapat diakses dengan mudah oleh semua orang. Kami memahami bahwa waktu Anda sangat berharga, itulah mengapa kami berkomitmen untuk memberikan layanan yang cepat, efisien, dan dapat diandalkan.
+                        6R Laundry merupakan usaha jasa pelayanan laundry yang berlokasi di Jl. Ki Maja Blok BB No.17, Way Halim Permai, Kota Bandar Lampung. Usaha ini termasuk dalam kategori UMKM yang dikelola langsung oleh pemilik bersama beberapa karyawan, dan saat ini telah memiliki dua cabang yang aktif melayani pelanggan di wilayah Bandar Lampung.
                     </p>
                     <p class="text-gray-600 mb-4">
-                        Dengan tim profesional yang berpengalaman dan peralatan modern, kami telah melayani lebih dari 10.000 pelanggan dengan tingkat kepuasan 98%. Setiap pakaian yang dipercayakan kepada kami ditangani dengan hati-hati dan profesional.
-                    </p>
+                        Dalam operasionalnya, 6R Laundry berkomitmen memberikan pelayanan yang cepat, efisien, dan ramah kepada pelanggan. Namun, proses pencatatan sebelumnya masih dilakukan secara manual melalui buku catatan, sehingga sering terjadi masalah seperti kehilangan data pelanggan, kesalahan pencatatan transaksi, serta sulitnya memantau status cucian secara akurat.
                     <p class="text-gray-600 mb-6">
-                        Kami tidak hanya mencuci pakaian, tetapi juga merawat investasi fashion Anda. Dari pakaian sehari-hari hingga pakaian premium, semua mendapat perhatian dan perawatan yang sama baiknya.
-                    </p>
+                        6R Laundry berkomitmen untuk terus meningkatkan kualitas layanan demi kepuasan pelanggan, sekaligus memperkuat daya saing sebagai usaha laundry yang profesional di wilayah Bandar Lampung.
                 </div>
             </div>
         </div>
@@ -168,87 +164,26 @@ require_once '../config/database.php';
         </div>
     </section>
 
-    <!-- Our Team -->
-    <section class="py-16 bg-gray-50">
-        <div class="container mx-auto px-4">
-            <h2 class="text-3xl font-bold text-center text-gray-800 mb-4">Tim Kami</h2>
-            <p class="text-center text-gray-600 mb-12">Profesional berpengalaman yang siap melayani Anda</p>
-            
-            <div class="grid md:grid-cols-4 gap-8">
-                <div class="bg-white rounded-lg shadow-md p-6 text-center">
-                    <div class="w-24 h-24 bg-indigo-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                        <i class="fas fa-user text-indigo-600 text-4xl"></i>
-                    </div>
-                    <h3 class="text-xl font-bold text-gray-800 mb-1">Budi Santoso</h3>
-                    <p class="text-gray-600 mb-3">CEO & Founder</p>
-                    <div class="flex justify-center space-x-3">
-                        <a href="#" class="text-gray-400 hover:text-indigo-600"><i class="fab fa-linkedin"></i></a>
-                        <a href="#" class="text-gray-400 hover:text-indigo-600"><i class="fab fa-twitter"></i></a>
-                    </div>
-                </div>
-                
-                <div class="bg-white rounded-lg shadow-md p-6 text-center">
-                    <div class="w-24 h-24 bg-indigo-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                        <i class="fas fa-user text-indigo-600 text-4xl"></i>
-                    </div>
-                    <h3 class="text-xl font-bold text-gray-800 mb-1">Siti Nurhaliza</h3>
-                    <p class="text-gray-600 mb-3">Operations Manager</p>
-                    <div class="flex justify-center space-x-3">
-                        <a href="#" class="text-gray-400 hover:text-indigo-600"><i class="fab fa-linkedin"></i></a>
-                        <a href="#" class="text-gray-400 hover:text-indigo-600"><i class="fab fa-twitter"></i></a>
-                    </div>
-                </div>
-                
-                <div class="bg-white rounded-lg shadow-md p-6 text-center">
-                    <div class="w-24 h-24 bg-indigo-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                        <i class="fas fa-user text-indigo-600 text-4xl"></i>
-                    </div>
-                    <h3 class="text-xl font-bold text-gray-800 mb-1">Ahmad Rizki</h3>
-                    <p class="text-gray-600 mb-3">Quality Control</p>
-                    <div class="flex justify-center space-x-3">
-                        <a href="#" class="text-gray-400 hover:text-indigo-600"><i class="fab fa-linkedin"></i></a>
-                        <a href="#" class="text-gray-400 hover:text-indigo-600"><i class="fab fa-twitter"></i></a>
-                    </div>
-                </div>
-                
-                <div class="bg-white rounded-lg shadow-md p-6 text-center">
-                    <div class="w-24 h-24 bg-indigo-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                        <i class="fas fa-user text-indigo-600 text-4xl"></i>
-                    </div>
-                    <h3 class="text-xl font-bold text-gray-800 mb-1">Dewi Lestari</h3>
-                    <p class="text-gray-600 mb-3">Customer Service</p>
-                    <div class="flex justify-center space-x-3">
-                        <a href="#" class="text-gray-400 hover:text-indigo-600"><i class="fab fa-linkedin"></i></a>
-                        <a href="#" class="text-gray-400 hover:text-indigo-600"><i class="fab fa-twitter"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
     <!-- Stats -->
-    <section class="py-16 bg-indigo-600 text-white">
-        <div class="container mx-auto px-4">
-            <div class="grid md:grid-cols-4 gap-8 text-center">
-                <div>
-                    <div class="text-5xl font-bold mb-2">10K+</div>
-                    <p class="text-indigo-200">Pelanggan Puas</p>
-                </div>
-                <div>
-                    <div class="text-5xl font-bold mb-2">50K+</div>
-                    <p class="text-indigo-200">Pesanan Selesai</p>
-                </div>
-                <div>
-                    <div class="text-5xl font-bold mb-2">98%</div>
-                    <p class="text-indigo-200">Tingkat Kepuasan</p>
-                </div>
-                <div>
-                    <div class="text-5xl font-bold mb-2">5+</div>
-                    <p class="text-indigo-200">Tahun Pengalaman</p>
-                </div>
+<section class="py-16 bg-indigo-600 text-white">
+    <div class="container mx-auto px-4">
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-8 text-center max-w-4xl mx-auto">
+            <div>
+                <div class="text-5xl font-bold mb-2">2+</div>
+                <p class="text-indigo-200">Cabang</p>
+            </div>
+            <div>
+                <div class="text-5xl font-bold mb-2">60%</div>
+                <p class="text-indigo-200">Tingkat Kepuasan</p>
+            </div>
+            <div>
+                <div class="text-5xl font-bold mb-2">3+</div>
+                <p class="text-indigo-200">Tahun Pengalaman</p>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
     <!-- CTA -->
     <section class="py-16 bg-white">

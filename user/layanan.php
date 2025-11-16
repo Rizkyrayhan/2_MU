@@ -21,10 +21,8 @@ $result = $conn->query($query);
         <div class="container mx-auto px-4 py-4">
             <div class="flex justify-between items-center">
                 <a href="../index.php" class="flex items-center space-x-2">
-                    <div class="bg-indigo-600 rounded-full p-2">
-                        <i class="fas fa-tshirt text-white text-xl"></i>
-                    </div>
-                    <span class="text-2xl font-bold text-gray-800">6R Laundry</span>
+                        <img src="../assets/images/logo2_6R.png" alt="6R Laundry" class="w-15 h-10">
+                    <span class="text-2xl font-bold text-gray-800">Laundry</span>
                 </a>
                 
                 <div class="hidden md:flex space-x-8">

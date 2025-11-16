@@ -17,10 +17,8 @@ require_once 'config/database.php';
         <div class="container mx-auto px-4 py-4">
             <div class="flex justify-between items-center">
                 <div class="flex items-center space-x-2">
-                    <div class="bg-indigo-600 rounded-full p-2">
-                        <i class="fas fa-tshirt text-white text-xl"></i>
-                    </div>
-                    <span class="text-2xl font-bold text-gray-800">6R Laundry</span>
+                        <img src="assets/images/logo2_6R.png" alt="6R Laundry" class="w-15 h-10">
+                    <span class="text-2xl font-bold text-gray-800">Laundry</span>
                 </div>
                 
                 <!-- Desktop Menu -->
@@ -37,6 +35,9 @@ require_once 'config/database.php';
                             <i class="fas fa-box"></i> Tracking
                         </a>
                         <span class="text-gray-600">Hi, <?php echo htmlspecialchars($_SESSION['nama']); ?></span>
+                        <a href="user/pesan.php" class="bg-indigo-600 text-white px-6 py-2 rounded-lg hover:bg-indigo-700 transition">
+                            Pesan Sekarang
+                        </a>
                         <a href="api/login.php?action=logout" class="bg-red-500 text-white px-4 py-2 rounded-lg hover:bg-red-600 transition">
                             Logout
                         </a>
@@ -241,7 +242,7 @@ require_once 'config/database.php';
         <div class="container mx-auto px-4 text-center">
             <h2 class="text-3xl font-bold mb-4">Siap Mencoba Layanan Kami?</h2>
             <p class="text-lg mb-8 text-indigo-100">Dapatkan pengalaman laundry terbaik dengan teknologi modern dan pelayanan profesional</p>
-            <a href="user/pesan.php" class="inline-block bg-white text-indigo-600 px-8 py-3 rounded-lg font-semibold hover:bg-indigo-50 transition transform hover:scale-105">
+            <a href="user/kontak.php" class="inline-block bg-white text-indigo-600 px-8 py-3 rounded-lg font-semibold hover:bg-indigo-50 transition transform hover:scale-105">
                 <i class="fas fa-phone-alt mr-2"></i> Hubungi Kami
             </a>
         </div>
@@ -253,10 +254,10 @@ require_once 'config/database.php';
             <div class="grid md:grid-cols-4 gap-8">
                 <div>
                     <div class="flex items-center space-x-2 mb-4">
-                        <div class="bg-indigo-600 rounded-full p-2">
-                            <i class="fas fa-tshirt text-white"></i>
+                        <div class="bg-white rounded-full p-2">
+                            <img src="assets/images/logo2_6R.png" alt="6R Laundry" class="w-9 h-6">
                         </div>
-                        <span class="text-xl font-bold">6R Laundry</span>
+                        <span class="text-xl font-bold">Laundry</span>
                     </div>
                     <p class="text-gray-400">Solusi laundry terpercaya dengan pelayanan profesional dan teknologi modern.</p>
                     <div class="flex space-x-4 mt-4">
@@ -303,7 +304,7 @@ require_once 'config/database.php';
                     <ul class="space-y-3 text-gray-400">
                         <li class="flex items-start">
                             <i class="fas fa-map-marker-alt mt-1 mr-3"></i>
-                            <span>Jl. Sudirman No. 123, lampungg</span>
+                            <span>Jl. Ki Maja Blok BB No.17, Way Halim Permai, Kec. Way Halim, Kota Bandar Lampung, Lampung 35132</span>
                         </li>
                         <li class="flex items-center">
                             <i class="fas fa-phone mr-3"></i>

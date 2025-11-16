@@ -3,7 +3,7 @@ require_once '../config/database.php';
 
 // Check if user is logged in
 if(!isLoggedIn()) {
-    $_SESSION['redirect_after_login'] = 'pesan.php';
+    $_SESSION['redirect_after_login'] = 'user/pesan.php';
     redirect('user/login.php');
 }
 

@@ -3,10 +3,10 @@
         <div class="grid md:grid-cols-4 gap-8">
             <div>
                 <div class="flex items-center space-x-2 mb-4">
-                    <div class="bg-indigo-600 rounded-full p-2">
-                        <i class="fas fa-tshirt text-white"></i>
-                    </div>
-                    <span class="text-xl font-bold">6R Laundry</span>
+                        <div class="bg-white rounded-full p-2">
+                            <img src="../assets/images/logo2_6R.png" alt="6R Laundry" class="w-9 h-6">
+                        </div>
+                        <span class="text-xl font-bold">Laundry</span>
                 </div>
                 <p class="text-gray-400 mb-4">Solusi laundry terpercaya dengan pelayanan profesional dan teknologi modern.</p>
                 <div class="flex space-x-4">
@@ -47,7 +47,7 @@
                 <ul class="space-y-3 text-gray-400">
                     <li class="flex items-start">
                         <i class="fas fa-map-marker-alt mt-1 mr-3"></i>
-                        <span>Jl. Sudirman No. 123, Lampung</span>
+                        <span>JJl. Ki Maja Blok BB No.17, Way Halim Permai, Kec. Way Halim, Kota Bandar Lampung, Lampung 35132</span>
                     </li>
                     <li class="flex items-center">
                         <i class="fas fa-phone mr-3"></i>
