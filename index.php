@@ -261,13 +261,13 @@ require_once 'config/database.php';
                     </div>
                     <p class="text-gray-400">Solusi laundry terpercaya dengan pelayanan profesional dan teknologi modern.</p>
                     <div class="flex space-x-4 mt-4">
-                        <a href="#" class="w-10 h-10 bg-indigo-600 rounded-full flex items-center justify-center hover:bg-indigo-700 transition">
+                        <a href="https://www.facebook.com/share/1GmoNZdZKb/" class="w-10 h-10 bg-indigo-600 rounded-full flex items-center justify-center hover:bg-indigo-700 transition">
                             <i class="fab fa-facebook-f"></i>
                         </a>
-                        <a href="#" class="w-10 h-10 bg-indigo-600 rounded-full flex items-center justify-center hover:bg-indigo-700 transition">
+                        <a href="https://www.instagram.com/6r.laundry?igsh=MWlncjg3b2ExZWJ4eA==" class="w-10 h-10 bg-indigo-600 rounded-full flex items-center justify-center hover:bg-indigo-700 transition">
                             <i class="fab fa-instagram"></i>
                         </a>
-                        <a href="#" class="w-10 h-10 bg-indigo-600 rounded-full flex items-center justify-center hover:bg-indigo-700 transition">
+                        <a href="https://wa.me/6282180222255" class="w-10 h-10 bg-indigo-600 rounded-full flex items-center justify-center hover:bg-indigo-700 transition">
                             <i class="fab fa-whatsapp"></i>
                         </a>
                     </div>
@@ -293,9 +293,6 @@ require_once 'config/database.php';
                     <h3 class="text-lg font-bold mb-4">Perusahaan</h3>
                     <ul class="space-y-2 text-gray-400">
                         <li><a href="user/tentang.php" class="hover:text-white transition">Tentang Kami</a></li>
-                        <li><a href="#" class="hover:text-white transition">Karir</a></li>
-                        <li><a href="#" class="hover:text-white transition">Kemitraan</a></li>
-                        <li><a href="#" class="hover:text-white transition">Blog</a></li>
                     </ul>
                 </div>
                 

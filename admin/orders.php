@@ -8,6 +8,9 @@ if(!isLoggedIn() || !isAdmin()) {
 // Filter
 $filter_status = isset($_GET['status']) ? cleanInput($_GET['status']) : 'all';
 
+//Get Setatus
+$pending_orders = $conn->query("SELECT COUNT(*) as total FROM orders WHERE status = 'pending'")->fetch_assoc()['total'];
+
 // Get orders
 $query = "
     SELECT o.*, u.nama as customer_name, u.telepon, s.nama_layanan 
@@ -39,10 +42,8 @@ $orders = $conn->query($query);
         <aside class="w-64 bg-gray-900 text-white flex-shrink-0">
             <div class="p-6">
                 <div class="flex items-center space-x-2 mb-8">
-                    <div class="bg-indigo-600 rounded-full p-2">
-                        <i class="fas fa-tshirt text-xl"></i>
-                    </div>
-                    <span class="text-xl font-bold">6R Laundry</span>
+                        <img src="../assets/images/logo2_6R.png" alt="Logo" class="w-9 h-7">
+                    <span class="text-xl font-bold">Laundry</span>
                 </div>
                 
                 <nav class="space-y-2">
@@ -50,9 +51,12 @@ $orders = $conn->query($query);
                         <i class="fas fa-home"></i>
                         <span>Dashboard</span>
                     </a>
-                    <a href="orders.php" class="flex items-center space-x-3 bg-indigo-600 px-4 py-3 rounded-lg">
+                    <a href="orders.php" class="flex items-center space-x-3 px-4 py-3 rounded-lg hover:bg-gray-800 transition">
                         <i class="fas fa-shopping-bag"></i>
                         <span>Pesanan</span>
+                        <?php if($pending_orders > 0): ?>
+                            <span class="ml-auto bg-red-500 text-xs px-2 py-1 rounded-full"><?php echo $pending_orders; ?></span>
+                        <?php endif; ?>
                     </a>
                     <a href="customers.php" class="flex items-center space-x-3 px-4 py-3 rounded-lg hover:bg-gray-800 transition">
                         <i class="fas fa-users"></i>
@@ -61,6 +65,10 @@ $orders = $conn->query($query);
                     <a href="services.php" class="flex items-center space-x-3 px-4 py-3 rounded-lg hover:bg-gray-800 transition">
                         <i class="fas fa-cog"></i>
                         <span>Layanan</span>
+                    </a>
+                                        <a href="settings.php" class="flex items-center space-x-3 px-4 py-3 rounded-lg hover:bg-gray-800 transition">
+                        <i class="fas fa-sliders-h"></i>
+                        <span>Pengaturan</span>
                     </a>
                 </nav>
             </div>

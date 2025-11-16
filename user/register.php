@@ -66,7 +66,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
             <div class="text-center mb-8 fade-in">
                 <a href="../index.php" class="inline-flex items-center justify-center space-x-2 mb-4">
                     <div class="bg-white rounded-full p-3">
-                        <i class="fas fa-tshirt text-indigo-600 text-3xl"></i>
+                        <img src="../assets/images/logo2_6R.png" alt="6R Laundry" class="w-12 h-10">
                     </div>
                 </a>
                 <h2 class="text-3xl font-bold text-white">Daftar Akun Baru</h2>

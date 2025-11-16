@@ -21,8 +21,10 @@ $result = $conn->query($query);
         <div class="container mx-auto px-4 py-4">
             <div class="flex justify-between items-center">
                 <a href="../index.php" class="flex items-center space-x-2">
-                        <img src="../assets/images/logo2_6R.png" alt="6R Laundry" class="w-15 h-10">
-                    <span class="text-2xl font-bold text-gray-800">Laundry</span>
+                    <div class="bg-indigo-600 rounded-full p-2">
+                        <i class="fas fa-tshirt text-white text-xl"></i>
+                    </div>
+                    <span class="text-2xl font-bold text-gray-800">6R Laundry</span>
                 </a>
                 
                 <div class="hidden md:flex space-x-8">
@@ -77,16 +79,28 @@ $result = $conn->query($query);
             <div class="grid md:grid-cols-3 gap-8">
                 <?php if($result && $result->num_rows > 0): ?>
                     <?php while($service = $result->fetch_assoc()): ?>
-                        <div class="bg-white rounded-lg shadow-lg p-8 service-card">
+                        <div class="bg-white rounded-lg shadow-lg p-8 service-card hover:shadow-2xl transition-all duration-300">
                             <div class="text-center mb-6">
-                                <div class="w-20 h-20 bg-indigo-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                                    <?php if($service['icon'] == 'shirt'): ?>
-                                        <i class="fas fa-tshirt text-indigo-600 text-3xl"></i>
-                                    <?php elseif($service['icon'] == 'sparkles'): ?>
-                                        <i class="fas fa-sparkles text-indigo-600 text-3xl"></i>
-                                    <?php else: ?>
-                                        <i class="fas fa-gem text-indigo-600 text-3xl"></i>
-                                    <?php endif; ?>
+                                <?php 
+                                // Map icon names to proper Font Awesome icons with colors
+                                // Using only icons that are 100% available in Font Awesome 6.4
+                                $iconConfig = [
+                                    'tshirt' => ['icon' => 'fa-tshirt', 'bg' => 'bg-blue-100', 'text' => 'text-blue-600'],
+                                    'shirt' => ['icon' => 'fa-tshirt', 'bg' => 'bg-blue-100', 'text' => 'text-blue-600'],
+                                    'sparkles' => ['icon' => 'fa-wand-magic-sparkles', 'bg' => 'bg-purple-100', 'text' => 'text-purple-600'],
+                                    'star' => ['icon' => 'fa-star', 'bg' => 'bg-purple-100', 'text' => 'text-purple-600'],
+                                    'gem' => ['icon' => 'fa-gem', 'bg' => 'bg-pink-100', 'text' => 'text-pink-600'],
+                                    'bolt' => ['icon' => 'fa-bolt', 'bg' => 'bg-yellow-100', 'text' => 'text-yellow-600'],
+                                    'crown' => ['icon' => 'fa-crown', 'bg' => 'bg-amber-100', 'text' => 'text-amber-600'],
+                                    'soap' => ['icon' => 'fa-soap', 'bg' => 'bg-cyan-100', 'text' => 'text-cyan-600']
+                                ];
+                                
+                                $config = isset($iconConfig[$service['icon']]) 
+                                    ? $iconConfig[$service['icon']] 
+                                    : ['icon' => 'fa-tshirt', 'bg' => 'bg-indigo-100', 'text' => 'text-indigo-600'];
+                                ?>
+                                <div class="w-20 h-20 <?php echo $config['bg']; ?> rounded-full flex items-center justify-center mx-auto mb-4 transform hover:scale-110 transition-transform duration-300">
+                                    <i class="fas <?php echo $config['icon']; ?> <?php echo $config['text']; ?> text-3xl"></i>
                                 </div>
                                 <h3 class="text-2xl font-bold text-gray-800 mb-2">
                                     <?php echo htmlspecialchars($service['nama_layanan']); ?>

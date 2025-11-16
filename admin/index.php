@@ -45,10 +45,8 @@ $orders_by_status = $conn->query("
         <aside class="w-64 bg-gray-900 text-white flex-shrink-0">
             <div class="p-6">
                 <div class="flex items-center space-x-2 mb-8">
-                    <div class="bg-indigo-600 rounded-full p-2">
-                        <i class="fas fa-tshirt text-xl"></i>
-                    </div>
-                    <span class="text-xl font-bold">6R Laundry</span>
+                        <img src="../assets/images/logo2_6R.png" alt="Logo" class="w-9 h-7">
+                    <span class="text-xl font-bold">Laundry</span>
                 </div>
                 
                 <nav class="space-y-2">

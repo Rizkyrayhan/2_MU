@@ -1,14 +1,20 @@
 <?php
 require_once '../config/database.php';
 
-header('Content-Type: application/json');
-
-// Get action
+// Set JSON header for all actions except print
 $action = isset($_GET['action']) ? $_GET['action'] : '';
+if($action != 'print') {
+    header('Content-Type: application/json');
+}
 
 // Get Order Detail
-if($action == 'detail' && isset($_GET['kode'])) {
-    $kode = cleanInput($_GET['kode']);
+if($action == 'detail') {
+    $kode = isset($_GET['kode']) ? cleanInput($_GET['kode']) : (isset($_GET['kode_order']) ? cleanInput($_GET['kode_order']) : null);
+    
+    if(!$kode) {
+        echo json_encode(['success' => false, 'message' => 'Kode order tidak ditemukan']);
+        exit;
+    }
     
     // Get order
     $order_query = "

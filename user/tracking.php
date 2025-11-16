@@ -2,7 +2,7 @@
 require_once '../config/database.php';
 
 if(!isLoggedIn()) {
-    redirect('login.php');
+    redirect('user/login.php');
 }
 
 $user_id = $_SESSION['user_id'];
@@ -41,12 +41,12 @@ if(isset($_SESSION['success'])) {
         <div class="container mx-auto px-4 py-4">
             <div class="flex justify-between items-center">
                 <a href="../index.php" class="flex items-center space-x-2">
-                        <img src="../assets/images/logo2_6R.png" alt="6R Laundry" class="w-15 h-10">
+                        <img src="../assets/images/logo2_6R.png" alt="6R Laundry" class="w-12 h-10">
                     <span class="text-2xl font-bold text-gray-800">Laundry</span>
                 </a>
                 
                 <div class="flex items-center space-x-4">
-                    <a href="pesan.php" class="hidden md:inline-flex bg-indigo-600 text-white px-6 py-2 rounded-lg hover:bg-indigo-700 transition">
+                    <a href="pesan.php" class="hidden md:inline-flex bg-indigo-600 justify-center items-center text-white px-6 py-2 rounded-lg hover:bg-indigo-700 transition">
                         <i class="fas fa-plus mr-2"></i> Pesan Baru
                     </a>
                     <span class="text-gray-600">Hi, <?php echo htmlspecialchars($_SESSION['nama']); ?></span>

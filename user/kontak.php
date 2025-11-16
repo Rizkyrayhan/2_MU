@@ -183,7 +183,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
                                 </div>
                                 <div>
                                     <h3 class="font-semibold text-gray-800 mb-1">Telepon</h3>
-                                    <p class="text-gray-600">+62 812 3456 7890 (WhatsApp)</p>
+                                    <p class="text-gray-600">+62 821 8022 2255 (WhatsApp)</p>
                                 </div>
                             </div>
                             
@@ -214,17 +214,14 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
                     <div class="bg-white rounded-lg shadow-lg p-8">
                         <h2 class="text-2xl font-bold text-gray-800 mb-6">Ikuti Kami</h2>
                         <div class="flex space-x-4">
-                            <a href="#" class="w-12 h-12 bg-blue-600 text-white rounded-full flex items-center justify-center hover:bg-blue-700 transition">
+                            <a href="https://www.facebook.com/share/1GmoNZdZKb/" class="w-12 h-12 bg-blue-600 text-white rounded-full flex items-center justify-center hover:bg-blue-700 transition">
                                 <i class="fab fa-facebook-f text-xl"></i>
                             </a>
-                            <a href="#" class="w-12 h-12 bg-pink-600 text-white rounded-full flex items-center justify-center hover:bg-pink-700 transition">
+                            <a href="https://www.instagram.com/6r.laundry?igsh=MWlncjg3b2ExZWJ4eA==" class="w-12 h-12 bg-pink-600 text-white rounded-full flex items-center justify-center hover:bg-pink-700 transition">
                                 <i class="fab fa-instagram text-xl"></i>
                             </a>
-                            <a href="#" class="w-12 h-12 bg-green-600 text-white rounded-full flex items-center justify-center hover:bg-green-700 transition">
+                            <a href="https://wa.me/6282180222255" class="w-12 h-12 bg-green-600 text-white rounded-full flex items-center justify-center hover:bg-green-700 transition">
                                 <i class="fab fa-whatsapp text-xl"></i>
-                            </a>
-                            <a href="#" class="w-12 h-12 bg-blue-400 text-white rounded-full flex items-center justify-center hover:bg-blue-500 transition">
-                                <i class="fab fa-twitter text-xl"></i>
                             </a>
                         </div>
                     </div>
